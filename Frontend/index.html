@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Brain Tumor Analysis &amp; Prediction</title>
+
+    <link href="css/styles-merged.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="fonts/icomoon/style.css" rel="stylesheet">
+    <link href="css/predictor.css" rel="stylesheet">
+    <link href="css/back-to-top.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="js/back-to-top.js"></script>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default probootstrap-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed"
+                    data-target="#navbar-collapse"
+                    data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Brain Tumor Analysis &amp; Prediction</a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a data-nav-section="home" href="#">Home</a></li>
+                <li class="active"><a data-nav-section="details" href="#">Details</a></li>
+                <li><a data-nav-section="contact" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Brain tumor section -->
+<section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant"
+         data-section="home" data-stellar-background-ratio="0.5" id="home"
+         style="background-image: url(img/main_back.jpg);">
+    <div class="container">
+        <div class="row intro-text">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h1 class="probootstrap-heading probootstrap-animate" style="color:#E0F7FA">Predict your chance of
+                    having a Brain Tumor because prevention is better than cure!</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<button class="btn btn-primary" id="backToTopBtn" onclick="topFunction()" title="Go to top">
+    <span class="icon icon-align-top"></span>
+</button>
+
+<!-- Form Section -->
+<section class="probootstrap-section probootstrap-bg-dark" data-section="details">
+
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName4">Name</label>
+            <input type="name" class="form-control" id="inputName4" placeholder="Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAge4">DOB(DD/MM/YYYY)</label>
+            <input type="age" class="form-control" id="inputAge4" placeholder="DOB">
+          </div>
+        </div>
+        <div class="form-group col-md-12">
+          <label for="inputPhoneNo">Phone No</label>
+          <input type="text" class="form-control" id="inputPhoneno" placeholder="Phone No">
+        </div>
+        <div class="form-group col-md-12">
+          <div class="file-upload-wrapper" data-text="Upload Your MRI">
+            <label for="inputPhoneNo">Upload Your MRI</label>
+            <input name="file-upload-field" class="file-upload-field" type="file" value="">
+          </div>
+        </div>
+        
+        <div class="form-group col-md-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                I acknowledge that the information provided above is true to the best of my knowledge.
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="sign btn btn-primary">Submit</button>
+      </form>
+</section>
+
+<!-- Get In Touch -->
+<section class="probootstrap-section probootstrap-bg-light" data-section="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="" class="probootstrap-form">
+                    <h2 class="text-black mt0">Get In Touch</h2>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Phone number" type="number">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" cols="30" placeholder="Comments/Type a message" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="submit" value="Send Message">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+                <ul class="probootstrap-contact-details">
+                    <li>
+                        <span class="text-uppercase">Email <span class="icon icon-email"></span></span>
+                        nsharma1_be19@thapar.edu  <br>
+                        achadha_be19@thapar.edu  <br>
+                        hsingh11_be19@thapar.edu  <br>
+                        atiwari1_be19@thapar.edu
+                    </li>
+                    <li>
+                        <span class="text-uppercase">GitHub <span class="icon icon-github2"></span></span>
+                        <a href="https://github.com/nitinsharma26" target="_blank">Nitin Sharma</a> <br>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="probootstrap-footer">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="probootstrap-link" href="#home">Back to top <span class="icon icon-align-top"></span></a> <br>
+                &copy; 2022. All Rights Reserved. <br> Designed &amp; Developed by <a
+                    href="https://github.com/nitinsharma26" target="_blank">Nitin Sharma <span
+                    class="icon icon-github"></span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
